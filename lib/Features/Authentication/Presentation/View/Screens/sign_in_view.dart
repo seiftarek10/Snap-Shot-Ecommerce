@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Widgets/button.dart';
 import 'package:snap_shot/Core/Widgets/text_form_filed.dart';
+import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/continue_with_google.dart';
+import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/forget_password.dart';
+import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/have_account.dart';
+import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/or_divider.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/title_subtitle.dart';
 
 class SignInView extends StatelessWidget {
@@ -14,7 +18,7 @@ class SignInView extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const AuthentactionTitleAndSubTitle(
                 title: "Welcome back!",
@@ -29,24 +33,21 @@ class SignInView extends StatelessWidget {
                 label: 'Password',
               ),
               Space.instance.vertical8,
-              Align(
+              const Align(
                   alignment: Alignment.centerRight,
-                  child: TextButton(
-                    onPressed: () {},
-                    child: const Text('Forget Password ?',
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.black),
-                        textAlign: TextAlign.end),
-                  )),
+                  child: ForgetPasswordText()),
               Space.instance.vertical36,
-              SizedBox(
-                width: double.infinity,
-                child: AppButton(
-                  label: 'Sign In',
-                  onPressed: () {},
-                ),
+              AppButton(
+                label: 'Sign In',
+                onPressed: () {},
+              ),
+              Space.instance.vertical36,
+              const OrDivider(),
+              Space.instance.vertical36,
+              const ContinueWithGoogle(),
+              Space.instance.vertical24,
+              const Center(
+                child: HavaAccountText(),
               )
             ],
           ),
