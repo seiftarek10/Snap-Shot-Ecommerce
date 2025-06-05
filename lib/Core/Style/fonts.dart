@@ -6,28 +6,27 @@ class Fonts {
 
   static Fonts instance = Fonts._();
 
-  TextStyle get font18_500Grey => TextStyle(
-      fontSize: 18.sp, color: Colors.grey[500], fontWeight: FontWeight.w500);
+  TextStyle get font16_500Grey => TextStyle(
+      fontSize: 16.sp, color: Colors.grey[500], fontWeight: FontWeight.w500);
   TextStyle get font16_500Black => TextStyle(
       fontSize: 16.sp, color: Colors.black, fontWeight: FontWeight.w500);
-  TextStyle get font18_500Black => TextStyle(
-      fontSize: 18.sp, color: Colors.black, fontWeight: FontWeight.w500);
-  TextStyle get font40BoldBlack => TextStyle(
-      color: Colors.black, fontSize: 40.sp, fontWeight: FontWeight.bold);
-  TextStyle get font24White => TextStyle(
+  TextStyle get font14_500Black => TextStyle(
+      fontSize: 14.sp, color: Colors.black, fontWeight: FontWeight.w500);
+  TextStyle get font36BoldBlack => TextStyle(
+      color: Colors.black, fontSize: 36.sp, fontWeight: FontWeight.bold);
+  TextStyle get font20White => TextStyle(
         color: Colors.white,
-        fontSize: 24.sp,
+        fontSize: 20.sp,
       );
-  TextStyle get font36White => TextStyle(
+  TextStyle get font32BoldWhite => TextStyle(
+      color: Colors.white, fontSize: 32.sp, fontWeight: FontWeight.bold);
+  TextStyle get font14White => TextStyle(
         color: Colors.white,
-        fontSize: 36.sp,
+        fontWeight: FontWeight.w500,
+        fontSize: 14.sp,
       );
-  TextStyle get font16White => TextStyle(
-        color: Colors.white,
-        fontSize: 16.sp,
-      );
-  TextStyle get font24Black => TextStyle(
+  TextStyle get font22Black => TextStyle(
         color: Colors.black,
-        fontSize: 24.sp,
+        fontSize: 22.sp,
       );
 }
