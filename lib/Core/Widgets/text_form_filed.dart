@@ -25,7 +25,7 @@ class AppTextField extends StatelessWidget {
             style: TextStyle(fontSize: 18, color: Colors.grey[500]),
           ),
           contentPadding: const EdgeInsets.all(22),
-          labelStyle: const TextStyle(color: Colors.black, fontSize: 22)),
+          labelStyle: const TextStyle(color: Colors.black, fontSize: 24)),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:snap_shot/Core/Routing/app_router.dart';
 
 class SnapShotApp extends StatelessWidget {
@@ -6,10 +7,19 @@ class SnapShotApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
-      routerConfig: router,
-      debugShowCheckedModeBanner: false,
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp.router(
+          theme: ThemeData(
+            scaffoldBackgroundColor: Colors.white,
+          ),
+          routerConfig: router,
+          debugShowCheckedModeBanner: false,
+        );
+      },
     );
   }
 }
