@@ -7,6 +7,7 @@ class SnapShotApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       routerConfig: router,
       debugShowCheckedModeBanner: false,
     );
