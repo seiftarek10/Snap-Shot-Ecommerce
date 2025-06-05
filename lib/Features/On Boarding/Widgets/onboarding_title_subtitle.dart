@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 
 class OnBoardingTitleAndSubTitle extends StatelessWidget {
   const OnBoardingTitleAndSubTitle({
@@ -10,18 +11,12 @@ class OnBoardingTitleAndSubTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text(
-          'Order Your Style',
-          style: TextStyle(
-              fontSize: 36, color: Colors.white, fontWeight: FontWeight.w900),
-        ),
+        Text('Order Your Style', style: Fonts.instance.font32BoldWhite),
         Space.instance.vertical8,
-        const Text(
-          'Explore a curated collection of clothing and accessories designed for your lifestyle.',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 16, color: Colors.white, fontWeight: FontWeight.w500),
-        ),
+        Text(
+            'Explore a curated collection of clothing and accessories designed for your lifestyle.',
+            textAlign: TextAlign.center,
+            style: Fonts.instance.font14White),
       ],
     );
   }

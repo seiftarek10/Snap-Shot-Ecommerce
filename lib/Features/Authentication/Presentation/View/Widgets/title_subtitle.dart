@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 
 class AuthentactionTitleAndSubTitle extends StatelessWidget {
   const AuthentactionTitleAndSubTitle({
@@ -14,12 +15,11 @@ class AuthentactionTitleAndSubTitle extends StatelessWidget {
       children: [
         Text(
           title,
-          style: const TextStyle(
-              color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),
+          style: Fonts.instance.font36BoldBlack,
         ),
         Text(
           subTitle,
-          style: const TextStyle(fontSize: 16, color: Colors.grey),
+          style: Fonts.instance.font16_500Grey,
         ),
       ],
     );

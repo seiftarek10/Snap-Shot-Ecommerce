@@ -28,7 +28,7 @@ class SignInView extends StatelessWidget {
               const AppTextField(
                 label: 'Email',
               ),
-              Space.instance.vertical24,
+              Space.instance.vertical36,
               const AppTextField(
                 label: 'Password',
               ),

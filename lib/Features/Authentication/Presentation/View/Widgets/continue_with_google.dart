@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 import 'package:snap_shot/Core/assets.dart';
 
 class ContinueWithGoogle extends StatelessWidget {
@@ -15,9 +16,9 @@ class ContinueWithGoogle extends StatelessWidget {
           height: 32,
           width: 32,
         ),
-        label: const Text(
+        label: Text(
           'Continue with Google',
-          style: TextStyle(color: Colors.black, fontSize: 18),
+          style: Fonts.instance.font16_500Black,
         ),
         style: OutlinedButton.styleFrom(
           backgroundColor: Colors.white,

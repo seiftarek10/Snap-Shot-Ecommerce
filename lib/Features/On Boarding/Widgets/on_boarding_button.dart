@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:snap_shot/Core/Routing/route_path.dart';
+import 'package:snap_shot/Core/Style/colors.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 
 class OnBoardingStartedButton extends StatelessWidget {
   const OnBoardingStartedButton({
@@ -17,28 +19,23 @@ class OnBoardingStartedButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.55,
         padding: const EdgeInsets.symmetric(vertical: 23, horizontal: 25),
         decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.65),
+          color: AppColors.instance.black.withOpacity(0.65),
           borderRadius: BorderRadius.circular(50),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              'Get Started',
-              style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w700),
-            ),
+            Text('Get Started', style: Fonts.instance.font20White),
             IconButton.filled(
               onPressed: () {},
-              color: Colors.white,
-              icon: const Icon(
+              color: AppColors.instance.white,
+              icon: Icon(
                 Icons.keyboard_arrow_right,
-                color: Colors.black,
+                color: AppColors.instance.black,
                 size: 32,
               ),
-              style: IconButton.styleFrom(backgroundColor: Colors.white),
+              style: IconButton.styleFrom(
+                  backgroundColor: AppColors.instance.white),
             )
           ],
         ),

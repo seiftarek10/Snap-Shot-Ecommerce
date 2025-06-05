@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 
 class ForgetPasswordText extends StatelessWidget {
   const ForgetPasswordText({
@@ -9,10 +10,8 @@ class ForgetPasswordText extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {},
-      child: const Text('Forget Password ?',
-          style: TextStyle(
-              fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black),
-          textAlign: TextAlign.end),
+      child: Text('Forget Password ?',
+          style: Fonts.instance.font14_500Black, textAlign: TextAlign.end),
     );
   }
 }

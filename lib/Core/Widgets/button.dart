@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Style/colors.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 
 class AppButton extends StatelessWidget {
   const AppButton({
@@ -15,13 +17,13 @@ class AppButton extends StatelessWidget {
     return ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.instance.black,
             padding: const EdgeInsets.symmetric(vertical: 15),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20))),
         child: Text(
           label,
-          style: const TextStyle(color: Colors.white, fontSize: 24),
+          style: Fonts.instance.font20White,
         ));
   }
 }

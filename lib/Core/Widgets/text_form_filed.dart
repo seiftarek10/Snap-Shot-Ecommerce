@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:snap_shot/Core/Extensions/context_extensions.dart';
+import 'package:snap_shot/Core/Style/colors.dart';
+import 'package:snap_shot/Core/Style/fonts.dart';
 
 class AppTextField extends StatelessWidget {
   const AppTextField({
@@ -10,22 +14,24 @@ class AppTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: InputDecoration(
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
-            borderSide: const BorderSide(width: 0.4, color: Colors.grey),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
-            borderSide: const BorderSide(color: Colors.black),
-          ),
-          label: Text(
-            label,
-            style: TextStyle(fontSize: 18, color: Colors.grey[500]),
-          ),
-          contentPadding: const EdgeInsets.all(22),
-          labelStyle: const TextStyle(color: Colors.black, fontSize: 24)),
+    return SizedBox(
+      height: context.height * 0.06,
+      child: TextFormField(
+        cursorColor: AppColors.instance.black,
+        style: Fonts.instance.font14_500Black,
+        decoration: InputDecoration(
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(20),
+              borderSide: BorderSide(width: 1, color: AppColors.instance.grey),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(20),
+              borderSide: BorderSide(color: AppColors.instance.black),
+            ),
+            label: Text(label,
+                style: Fonts.instance.font16_500Grey.copyWith(fontSize: 14.sp)),
+            labelStyle: Fonts.instance.font22Black),
+      ),
     );
   }
 }
