@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
-import 'package:snap_shot/Core/Page%20Layout/scroll_page.dart';
+import 'package:snap_shot/Core/Page%20Layout/scrollable_page.dart';
 import 'package:snap_shot/Core/Widgets/button.dart';
 import 'package:snap_shot/Core/Widgets/text_form_filed.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/continue_with_google.dart';
@@ -17,7 +17,7 @@ class SignInView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: AppScrollingPage(
+        child: AppScrollablePage(
           child: AppPagePadding(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
