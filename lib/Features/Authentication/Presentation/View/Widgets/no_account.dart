@@ -20,7 +20,7 @@ class NoAccountText extends StatelessWidget {
               text: 'Sign Up',
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
-                  context.push(RoutePath.signupView);
+                  context.pushReplacement(RoutePath.signupView);
                 },
               style: Fonts.instance.font16_500Black)
         ]));

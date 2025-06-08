@@ -15,7 +15,7 @@ class AuthentactionTitleAndSubTitle extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Fonts.instance.font36BoldBlack,
+          style: Fonts.instance.font32BoldWhite.copyWith(color: Colors.black),
         ),
         Text(
           subTitle,

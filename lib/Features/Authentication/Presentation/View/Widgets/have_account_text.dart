@@ -20,7 +20,7 @@ class HaveAccountText extends StatelessWidget {
               text: 'Sign In',
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
-                  context.push(RoutePath.signInView);
+                  context.pushReplacement(RoutePath.signInView);
                 },
               style: Fonts.instance.font16_500Black)
         ]));
