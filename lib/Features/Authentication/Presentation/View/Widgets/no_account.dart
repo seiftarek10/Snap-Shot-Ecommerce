@@ -1,9 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:snap_shot/Core/Routing/route_path.dart';
 import 'package:snap_shot/Core/Style/fonts.dart';
 
-class HavaAccountText extends StatelessWidget {
-  const HavaAccountText({
+class NoAccountText extends StatelessWidget {
+  const NoAccountText({
     super.key,
   });
 
@@ -16,7 +18,10 @@ class HavaAccountText extends StatelessWidget {
             children: [
           TextSpan(
               text: 'Sign Up',
-              recognizer: TapGestureRecognizer()..onTap = () {},
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  context.push(RoutePath.signupView);
+                },
               style: Fonts.instance.font16_500Black)
         ]));
   }
