@@ -20,7 +20,7 @@ class AppButton extends StatelessWidget {
             backgroundColor: AppColors.instance.black,
             padding: const EdgeInsets.symmetric(vertical: 15),
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20))),
+                borderRadius: BorderRadius.circular(40))),
         child: Text(
           label,
           style: Fonts.instance.font20White,
