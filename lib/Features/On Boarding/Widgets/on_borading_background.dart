@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snap_shot/Core/assets.dart';
+import 'package:snap_shot/Core/assets/assets.dart';
 
 class OnBoardingViewBackGroundImage extends StatelessWidget {
   const OnBoardingViewBackGroundImage({
@@ -9,7 +9,7 @@ class OnBoardingViewBackGroundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      Assets.onBoardingImage,
+      Assets.pngOnBoardingImage,
       fit: BoxFit.fitHeight,
     );
   }

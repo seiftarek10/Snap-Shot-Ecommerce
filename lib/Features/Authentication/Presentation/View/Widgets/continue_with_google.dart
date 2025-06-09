@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Style/fonts.dart';
-import 'package:snap_shot/Core/assets.dart';
+import 'package:snap_shot/Core/assets/assets.dart';
 
 class ContinueWithGoogle extends StatelessWidget {
   const ContinueWithGoogle({
@@ -12,7 +12,7 @@ class ContinueWithGoogle extends StatelessWidget {
     return OutlinedButton.icon(
         onPressed: () {},
         icon: Image.asset(
-          Assets.googleLogo, // Use your local image
+          Assets.pngGoogleLogo, // Use your local image
           height: 32,
           width: 32,
         ),
