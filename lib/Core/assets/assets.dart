@@ -53,5 +53,9 @@ class Assets {
   /// Assets for svgProfile
   /// assets/Svg/profile.svg
   static const String svgProfile = "assets/Svg/profile.svg";
+
+  /// Assets for svgSearch
+  /// assets/Svg/search.svg
+  static const String svgSearch = "assets/Svg/search.svg";
 }
 
