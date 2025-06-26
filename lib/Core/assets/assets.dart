@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for pngGoogleLogo
   /// assets/Png/google_logo.png
   static const String pngGoogleLogo = "assets/Png/google_logo.png";
@@ -32,7 +32,12 @@ class Assets {
 
   /// Assets for pngSplashViewAndroid11
   /// assets/Png/splash_view_android11.png
-  static const String pngSplashViewAndroid11 = "assets/Png/splash_view_android11.png";
+  static const String pngSplashViewAndroid11 =
+      "assets/Png/splash_view_android11.png";
+
+  /// Assets for pngTemp
+  /// assets/Png/temp.jpeg
+  static const String pngTemp = "assets/Png/temp.jpeg";
 
   /// Assets for svgBag
   /// assets/Svg/Bag.svg
@@ -58,4 +63,3 @@ class Assets {
   /// assets/Svg/search.svg
   static const String svgSearch = "assets/Svg/search.svg";
 }
-
