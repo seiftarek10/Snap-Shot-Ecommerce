@@ -4,7 +4,7 @@ import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
 import 'package:snap_shot/Core/Widgets/button.dart';
 import 'package:snap_shot/Core/Widgets/pop_arrow.dart';
 import 'package:snap_shot/Core/Widgets/text_form_filed.dart';
-import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/title_subtitle.dart';
+import 'package:snap_shot/Core/Widgets/title_subtitle.dart';
 
 class ForgetPasswordView extends StatelessWidget {
   const ForgetPasswordView({super.key});
@@ -22,7 +22,7 @@ class ForgetPasswordView extends StatelessWidget {
                 children: [
                   PopArrow(),
                   Expanded(
-                    child: AuthentactionTitleAndSubTitle(
+                    child: PageTitleAndSubTitle(
                         title: 'Forgot Password',
                         subTitle:
                             "No worries! Let’s help you secure your account again."),

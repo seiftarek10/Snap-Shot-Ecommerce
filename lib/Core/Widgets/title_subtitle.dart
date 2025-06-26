@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Style/fonts.dart';
 
-class AuthentactionTitleAndSubTitle extends StatelessWidget {
-  const AuthentactionTitleAndSubTitle({
+class PageTitleAndSubTitle extends StatelessWidget {
+  const PageTitleAndSubTitle({
     super.key,
     required this.title,
     required this.subTitle,

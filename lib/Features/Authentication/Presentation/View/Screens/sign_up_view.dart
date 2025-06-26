@@ -8,7 +8,7 @@ import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/cont
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/have_account_text.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/or_divider.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/terma_conditions_checkbox.dart';
-import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/title_subtitle.dart';
+import 'package:snap_shot/Core/Widgets/title_subtitle.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
@@ -22,7 +22,7 @@ class SignUpView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const AuthentactionTitleAndSubTitle(
+                const PageTitleAndSubTitle(
                     title: 'Welcome!',
                     subTitle: "Join us and start your shopping journey"),
                 Space.instance.vertical24,

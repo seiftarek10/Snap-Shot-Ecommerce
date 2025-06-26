@@ -8,7 +8,7 @@ import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/cont
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/forget_password.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/no_account.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/or_divider.dart';
-import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/title_subtitle.dart';
+import 'package:snap_shot/Core/Widgets/title_subtitle.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({super.key});
@@ -22,7 +22,7 @@ class SignInView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const AuthentactionTitleAndSubTitle(
+                const PageTitleAndSubTitle(
                   title: "Welcome back!",
                   subTitle: "Please enter your Details",
                 ),

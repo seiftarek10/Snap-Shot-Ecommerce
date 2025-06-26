@@ -14,6 +14,10 @@ class Assets {
   /// assets/Png/onBoardingImage.png
   static const String pngOnBoardingImage = "assets/Png/onBoardingImage.png";
 
+  /// Assets for pngSnapshotword
+  /// assets/Png/snapshotword.png
+  static const String pngSnapshotword = "assets/Png/snapshotword.png";
+
   /// Assets for pngSplashAndroid12
   /// assets/Png/splash_android12.png
   static const String pngSplashAndroid12 = "assets/Png/splash_android12.png";
