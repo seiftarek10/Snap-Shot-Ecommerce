@@ -16,7 +16,7 @@ class HomePageView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Space.instance.vertical24,
+          Space.instance.topPage,
           const SnapShotWordImage(),
           Space.instance.vertical36,
           const SearchField(),
