@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Style/colors.dart';
 import 'package:snap_shot/Core/assets/assets.dart';
-import 'package:snap_shot/Features/Category/Presentation/View/Screens/category.dart';
+import 'package:snap_shot/Features/Category/Presentation/View/Screens/category_view.dart';
 import 'package:snap_shot/Features/Home%20Page/Presentation/View/Screens/home_page_view.dart';
 import 'package:snap_shot/Features/Navigation%20Bar%20Controller/Widgets/bottom_bar_item.dart';
 

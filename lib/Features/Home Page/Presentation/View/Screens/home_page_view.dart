@@ -21,7 +21,7 @@ class HomePageView extends StatelessWidget {
           Space.instance.vertical36,
           const SearchField(),
           Space.instance.vertical36,
-          const CategoriesList(),
+          const CategoriesHomePageHorizintalList(),
           Space.instance.vertical24,
           const Expanded(
             child: ItemsList(),
