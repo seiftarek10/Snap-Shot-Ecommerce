@@ -9,6 +9,7 @@ class ItemsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+        physics: const BouncingScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 20,

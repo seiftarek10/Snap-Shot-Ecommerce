@@ -17,9 +17,9 @@ class _BottomNavigationBarBodyState extends State<BottomNavigationBarBody> {
 
   final List<String> _icons = [
     Assets.svgHome,
-    Assets.svgBag,
-    Assets.svgHeart,
     Assets.svgCategory,
+    Assets.svgHeart,
+    Assets.svgBag,
     Assets.svgProfile,
   ];
 
