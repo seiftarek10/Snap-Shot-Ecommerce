@@ -3,8 +3,8 @@ import 'package:snap_shot/Core/assets/assets.dart';
 import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/clicable_icon.dart';
 import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/item_data.dart';
 
-class Item extends StatelessWidget {
-  const Item({
+class ItemCard extends StatelessWidget {
+  const ItemCard({
     super.key,
   });
 

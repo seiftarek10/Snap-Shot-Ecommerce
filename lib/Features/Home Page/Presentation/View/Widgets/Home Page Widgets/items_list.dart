@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/item.dart';
+import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/item_card.dart';
 
 class ItemsList extends StatelessWidget {
   const ItemsList({
@@ -18,7 +18,7 @@ class ItemsList extends StatelessWidget {
         itemBuilder: (context, index) {
           return ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: const Item(),
+            child: const ItemCard(),
           );
         });
   }
