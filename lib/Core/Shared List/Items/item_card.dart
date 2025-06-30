@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/assets/assets.dart';
 import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/clicable_icon.dart';
-import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/item_data.dart';
+import 'package:snap_shot/Core/Shared%20List/Items/item_data.dart';
 
 class ItemCard extends StatelessWidget {
   const ItemCard({

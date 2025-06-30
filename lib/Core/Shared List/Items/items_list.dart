@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/item_card.dart';
+import 'package:snap_shot/Core/Shared%20List/Items/item_card.dart';
 
 class ItemsList extends StatelessWidget {
   const ItemsList({
