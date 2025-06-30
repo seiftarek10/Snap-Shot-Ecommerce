@@ -5,7 +5,10 @@ import 'package:snap_shot/Core/Style/fonts.dart';
 class PageTitleWithArrowBackWidget extends StatelessWidget {
   const PageTitleWithArrowBackWidget({
     super.key,
+    required this.title,
   });
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +17,7 @@ class PageTitleWithArrowBackWidget extends StatelessWidget {
         Positioned(
           left: 0,
           child: IconButton(
+              padding: EdgeInsets.zero,
               onPressed: () {
                 GoRouter.of(context).pop();
               },
@@ -21,7 +25,7 @@ class PageTitleWithArrowBackWidget extends StatelessWidget {
         ),
         Center(
           child: Text(
-            'Sneakers',
+            title,
             style: Fonts.instance.font32BoldWhite.copyWith(color: Colors.black),
           ),
         ),
