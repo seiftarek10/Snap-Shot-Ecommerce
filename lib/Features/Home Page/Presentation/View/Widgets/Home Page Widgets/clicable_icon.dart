@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:snap_shot/Core/Style/colors.dart';
 
@@ -11,7 +12,6 @@ class ClicableIcon extends StatefulWidget {
 
   final bool isActive;
   final String icon;
-
   @override
   State<ClicableIcon> createState() => _ClicableIconState();
 }
@@ -46,24 +46,24 @@ class _ClicableIconState extends State<ClicableIcon> {
       scale: _isTapped ? 1.03 : 0.95,
       duration: const Duration(milliseconds: 150),
       child: IconButton(
-        onPressed: _toggleFavorite,
-        icon: _isActive
-            ? Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColors.instance.black,
-                ),
-                child: SvgPicture.asset(
-                  widget.icon,
-                  colorFilter: ColorFilter.mode(
-                    AppColors.instance.white,
-                    BlendMode.srcIn,
-                  ),
-                ),
-              )
-            : SvgPicture.asset(widget.icon),
-      ),
+          onPressed: _toggleFavorite,
+          icon: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: _isActive ? AppColors.instance.black : null,
+            ),
+            child: SvgPicture.asset(widget.icon,
+                height: _isActive ? 20.sp : 25.sp,
+                width: _isActive ? 20.sp : 25.sp,
+                fit: BoxFit.fill,
+                colorFilter: _isActive
+                    ? ColorFilter.mode(
+                        AppColors.instance.white,
+                        BlendMode.srcIn,
+                      )
+                    : null),
+          )),
     );
   }
 }

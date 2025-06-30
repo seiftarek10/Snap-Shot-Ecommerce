@@ -13,7 +13,7 @@ class Item extends StatelessWidget {
     return Stack(children: [
       Positioned.fill(
         child: Image.asset(
-          Assets.pngTemp,
+          Assets.pngDarkGreySneaker,
           fit: BoxFit.fill,
         ),
       ),

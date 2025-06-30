@@ -13,21 +13,26 @@ class ItemData extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
-          children: [
-            Text(
-              'Jacket',
-              style: Fonts.instance.font16_500Black
-                  .copyWith(fontWeight: FontWeight.bold),
-            ),
-            Text(
-              r'$100',
-              style: Fonts.instance.font16_500Black
-                  .copyWith(fontWeight: FontWeight.bold),
-            )
-          ],
+        Expanded(
+          flex: 2,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Sneaker',
+                style: Fonts.instance.font20White
+                    .copyWith(fontWeight: FontWeight.bold),
+              ),
+              Text(
+                r'$100',
+                style: Fonts.instance.font20White
+                    .copyWith(fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
         ),
-        const ClicableIcon(isActive: false, icon: Assets.svgBag)
+        const Expanded(
+            child: ClicableIcon(isActive: false, icon: Assets.svgBag))
       ],
     );
   }

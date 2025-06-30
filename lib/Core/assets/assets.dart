@@ -1,6 +1,22 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
+  
+  /// Assets for pngBlackWhiteSneaker
+  /// assets/Png/black_white_sneaker.jpeg
+  static const String pngBlackWhiteSneaker = "assets/Png/black_white_sneaker.jpeg";
+
+  /// Assets for pngBlueSneaker
+  /// assets/Png/blue_sneaker.jpeg
+  static const String pngBlueSneaker = "assets/Png/blue_sneaker.jpeg";
+
+  /// Assets for pngBrownSneaker
+  /// assets/Png/brown_sneaker.jpeg
+  static const String pngBrownSneaker = "assets/Png/brown_sneaker.jpeg";
+
+  /// Assets for pngDarkGreySneaker
+  /// assets/Png/dark_grey_sneaker.jpeg
+  static const String pngDarkGreySneaker = "assets/Png/dark_grey_sneaker.jpeg";
 
   /// Assets for pngGoogleLogo
   /// assets/Png/google_logo.png
@@ -32,8 +48,7 @@ class Assets {
 
   /// Assets for pngSplashViewAndroid11
   /// assets/Png/splash_view_android11.png
-  static const String pngSplashViewAndroid11 =
-      "assets/Png/splash_view_android11.png";
+  static const String pngSplashViewAndroid11 = "assets/Png/splash_view_android11.png";
 
   /// Assets for pngTemp
   /// assets/Png/temp.jpeg
@@ -63,3 +78,4 @@ class Assets {
   /// assets/Svg/search.svg
   static const String svgSearch = "assets/Svg/search.svg";
 }
+
