@@ -12,10 +12,8 @@ class HomePageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppPagePadding(
-      vertical: 0,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        vertical: 0,
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Space.instance.topPage,
           const SnapShotWordImage(),
           Space.instance.vertical36,
@@ -23,11 +21,7 @@ class HomePageView extends StatelessWidget {
           Space.instance.vertical36,
           const CategoriesHomePageHorizintalList(),
           Space.instance.vertical24,
-          const Expanded(
-            child: ItemsList(),
-          )
-        ],
-      ),
-    );
+          const Expanded(child: ItemsList())
+        ]));
   }
 }
