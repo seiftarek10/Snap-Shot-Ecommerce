@@ -7,7 +7,7 @@ class AppPagePadding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: vertical ?? 40, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: vertical ?? 30, horizontal: 20),
       child: child,
     );
   }

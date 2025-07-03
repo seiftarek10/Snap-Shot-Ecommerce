@@ -32,4 +32,7 @@ class Fonts {
         color: Colors.black,
         fontSize: 22.sp,
       );
+
+  TextStyle get font26BoldBlack => TextStyle(
+      color: Colors.black, fontSize: 26.sp, fontWeight: FontWeight.bold);
 }

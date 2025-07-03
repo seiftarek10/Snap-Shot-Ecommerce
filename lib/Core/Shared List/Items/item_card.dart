@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Extensions/context_extensions.dart';
+import 'package:snap_shot/Core/Routing/route_path.dart';
 import 'package:snap_shot/Core/assets/assets.dart';
-import 'package:snap_shot/Features/Home%20Page/Presentation/View/Widgets/Home%20Page%20Widgets/clicable_icon.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/clicable_icon.dart';
 import 'package:snap_shot/Core/Shared%20List/Items/item_data.dart';
 
 class ItemCard extends StatelessWidget {
@@ -12,9 +14,14 @@ class ItemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Positioned.fill(
-        child: Image.asset(
-          Assets.pngDarkGreySneaker,
-          fit: BoxFit.fill,
+        child: GestureDetector(
+          onTap: () {
+            context.appRouter.push(RoutePath.itemsDetailsView);
+          },
+          child: Image.asset(
+            Assets.pngDarkGreySneaker,
+            fit: BoxFit.fill,
+          ),
         ),
       ),
       const Positioned(
