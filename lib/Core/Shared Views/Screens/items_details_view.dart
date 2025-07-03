@@ -52,7 +52,8 @@ class ItemsDetailsView extends StatelessWidget {
             price: '62.55',
           ),
           Space.instance.vertical24,
-          AppButton(onPressed: () {}, label: 'Add To Cart')
+          AppButton(onPressed: () {}, label: 'Add To Cart'),
+          Space.instance.vertical24,
         ])))));
   }
 }
