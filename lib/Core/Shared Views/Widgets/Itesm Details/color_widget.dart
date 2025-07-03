@@ -6,7 +6,11 @@ import 'package:snap_shot/Core/Style/fonts.dart';
 class ColorWidget extends StatefulWidget {
   const ColorWidget({super.key});
 
-  final List<Color> itemsColors = const [Colors.blue, Colors.black, Colors.red];
+  final List<Color> itemsColors = const [
+    Colors.brown,
+    Color.fromARGB(255, 211, 153, 132),
+    Color.fromARGB(255, 204, 155, 137)
+  ];
 
   @override
   State<ColorWidget> createState() => ColorWidgetState();

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Style/colors.dart';
 
 class ColorItem extends StatelessWidget {
   final Color color;
@@ -24,8 +25,7 @@ class ColorItem extends StatelessWidget {
             shape: BoxShape.circle,
             border: isActive == false
                 ? null
-                : Border.all(
-                    color: const Color.fromARGB(255, 36, 80, 102), width: 3),
+                : Border.all(color: AppColors.instance.black, width: 3),
           ),
         ));
   }
