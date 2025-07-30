@@ -27,8 +27,8 @@ class OnBoardingStartedButton extends StatelessWidget {
           children: [
             Text('Get Started', style: Fonts.instance.font20White),
             IconButton.filled(
-              onPressed: () {},
-              color: AppColors.instance.white,
+              onPressed: () {},   
+              color: AppColors.instance.white,        
               icon: Icon(
                 Icons.keyboard_arrow_right,
                 color: AppColors.instance.black,
