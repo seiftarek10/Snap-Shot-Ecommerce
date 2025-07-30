@@ -16,7 +16,7 @@ class OnBoardingTitleAndSubTitle extends StatelessWidget {
         Text(
             'Explore a curated collection of clothing and accessories designed for your lifestyle.',
             textAlign: TextAlign.center,
-            style: Fonts.instance.font14White),
+            style: Fonts.instance.font14_500White),
       ],
     );
   }

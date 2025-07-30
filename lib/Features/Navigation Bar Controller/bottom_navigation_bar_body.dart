@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Style/colors.dart';
 import 'package:snap_shot/Core/assets/assets.dart';
+import 'package:snap_shot/Features/Category/Presentation/View/Screens/category_view.dart';
+import 'package:snap_shot/Features/Home%20Page/Presentation/View/Screens/home_page_view.dart';
 import 'package:snap_shot/Features/Navigation%20Bar%20Controller/Widgets/bottom_bar_item.dart';
 
 class BottomNavigationBarBody extends StatefulWidget {
@@ -16,10 +18,18 @@ class _BottomNavigationBarBodyState extends State<BottomNavigationBarBody> {
 
   final List<String> _icons = [
     Assets.svgHome,
-    Assets.svgBag,
-    Assets.svgHeart,
     Assets.svgCategory,
+    Assets.svgHeart,
+    Assets.svgBag,
     Assets.svgProfile,
+  ];
+
+  final List<Widget> _screens = [
+    const HomePageView(),
+    const CategoryView(),
+    const Text('Heart'),
+    const Text('Categories'),
+    const Text('Profile'),
   ];
 
   void _onItemTapped(int index) {
@@ -31,7 +41,14 @@ class _BottomNavigationBarBodyState extends State<BottomNavigationBarBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const SafeArea(child: Column()),
+      body: SafeArea(
+        child: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 250),
+          transitionBuilder: (child, animation) =>
+              FadeTransition(opacity: animation, child: child),
+          child: _screens[selectedIndex],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: AppColors.instance.white,
         child: Row(

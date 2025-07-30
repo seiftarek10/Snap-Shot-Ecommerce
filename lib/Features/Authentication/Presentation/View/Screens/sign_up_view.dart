@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
 import 'package:snap_shot/Core/Page%20Layout/scrollable_page.dart';
-import 'package:snap_shot/Core/Widgets/button.dart';
-import 'package:snap_shot/Core/Widgets/text_form_filed.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/button.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/text_form_filed.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/continue_with_google.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/have_account_text.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/or_divider.dart';
 import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/terma_conditions_checkbox.dart';
-import 'package:snap_shot/Features/Authentication/Presentation/View/Widgets/title_subtitle.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/title_subtitle.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
@@ -22,7 +22,7 @@ class SignUpView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const AuthentactionTitleAndSubTitle(
+                const PageTitleAndSubTitle(
                     title: 'Welcome!',
                     subTitle: "Join us and start your shopping journey"),
                 Space.instance.vertical24,

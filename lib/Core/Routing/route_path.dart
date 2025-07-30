@@ -3,4 +3,6 @@ class RoutePath {
   static String signupView = '/signupView';
   static String forgetPasswordView = '/forgetPasswordView';
   static String bottomBarController = '/bottomNavigationBarController';
+  static String categoryItemsView = '/categoryItemsView';
+  static String itemsDetailsView = '/itemsDetailsView';
 }
