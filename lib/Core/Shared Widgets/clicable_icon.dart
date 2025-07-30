@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:snap_shot/Core/Extensions/context_extensions.dart';
 import 'package:snap_shot/Core/Style/colors.dart';
 
 class ClicableIcon extends StatefulWidget {
@@ -48,7 +49,7 @@ class _ClicableIconState extends State<ClicableIcon> {
       child: IconButton(
           onPressed: _toggleFavorite,
           icon: Container(
-            padding: const EdgeInsets.all(8),
+            padding: EdgeInsets.all(context.height * 0.01),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: _isActive ? AppColors.instance.black : null,

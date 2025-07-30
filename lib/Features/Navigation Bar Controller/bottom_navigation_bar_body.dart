@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Extensions/context_extensions.dart';
 import 'package:snap_shot/Core/Style/colors.dart';
 import 'package:snap_shot/Core/assets/assets.dart';
 import 'package:snap_shot/Features/Category/Presentation/View/Screens/category_view.dart';
@@ -51,6 +52,7 @@ class _BottomNavigationBarBodyState extends State<BottomNavigationBarBody> {
       ),
       bottomNavigationBar: BottomAppBar(
         color: AppColors.instance.white,
+        height: context.height * 0.07,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(

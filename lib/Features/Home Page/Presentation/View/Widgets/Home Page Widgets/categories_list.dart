@@ -18,13 +18,13 @@ class _CategoriesHomePageHorizintalListState
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: context.height * 0.07,
+      height: context.height * 0.06,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: CategoriesHomePageHorizintalList._categories.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
             child: Category(
                 categoryName:
                     CategoriesHomePageHorizintalList._categories[index],
