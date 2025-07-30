@@ -24,14 +24,14 @@ class BottomBarItem extends StatelessWidget {
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.all(12),
+        padding: EdgeInsets.all(context.height * 0.01),
         decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: isActive == true
                 ? AppColors.instance.black
                 : Colors.transparent),
         child: Transform.scale(
-          scale: isActive == true ? 0.95 : 1.05,
+          scale: isActive == true ? 0.85 : 1.0,
           child: SvgPicture.asset(
             icon,
             colorFilter: ColorFilter.mode(
@@ -39,10 +39,9 @@ class BottomBarItem extends StatelessWidget {
                     ? AppColors.instance.white
                     : AppColors.instance.black,
                 BlendMode.srcIn),
-            width: 20,
             height: isActive == true
-                ? context.height * 0.03
-                : context.height * 0.035,
+                ? context.height * 0.035
+                : context.height * 0.04,
           ),
         ),
       ),
