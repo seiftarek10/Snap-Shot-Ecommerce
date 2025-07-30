@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shot/Core/Extensions/context_extensions.dart';
 import 'package:snap_shot/Core/Style/colors.dart';
 import 'package:snap_shot/Core/Style/fonts.dart';
 
@@ -23,10 +24,10 @@ class Category extends StatelessWidget {
         currentIndex(index);
       },
       child: Transform.scale(
-        scale: isSelected ? 1.15 : 0.95,
+        scale: isSelected ? 1.05 : 0.95,
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 250),
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+          padding: EdgeInsets.symmetric(horizontal: context.width * 0.08),
           decoration: BoxDecoration(
               color: isSelected ? AppColors.instance.black : null,
               border: Border.all(
