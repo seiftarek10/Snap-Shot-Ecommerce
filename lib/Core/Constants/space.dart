@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Space {
   Space._();
 
   static Space instance = Space._();
 
-  final SizedBox vertical8 = const SizedBox(height: 8);
-  final SizedBox topPage = const SizedBox(height: 24);
-  final SizedBox vertical12 = const SizedBox(height: 12);
-  final SizedBox vertical18 = const SizedBox(height: 18);
-  final SizedBox vertical24 = const SizedBox(height: 24);
-  final SizedBox vertical36 = const SizedBox(height: 36);
-  final SizedBox vertical50 = const SizedBox(height: 50);
-  final SizedBox horizintal8 = const SizedBox(width: 8);
-  final SizedBox horizintal16 = const SizedBox(width: 16);
+  final SizedBox vertical8 = SizedBox(height: 8.sp);
+  final SizedBox topPage = SizedBox(height: 24.sp);
+  final SizedBox vertical12 = SizedBox(height: 12.sp);
+  final SizedBox vertical18 = SizedBox(height: 18.sp);
+  final SizedBox vertical24 = SizedBox(height: 24.sp);
+  final SizedBox vertical36 = SizedBox(height: 36.sp);
+  final SizedBox vertical50 = SizedBox(height: 50.sp);
+  final SizedBox horizontal8 = SizedBox(width: 8.sp);
+  final SizedBox horizontal16 = SizedBox(width: 16.sp);
+  final SizedBox horizontal24 = SizedBox(width: 24.sp);
 }

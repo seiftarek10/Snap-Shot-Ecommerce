@@ -32,7 +32,7 @@ class CategoryCard extends StatelessWidget {
               ),
             ),
           ),
-          Space.instance.horizintal16,
+          Space.instance.horizontal16,
           Expanded(
               flex: 5,
               child: Column(
