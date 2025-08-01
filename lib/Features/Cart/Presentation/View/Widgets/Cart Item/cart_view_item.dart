@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Extensions/context_extensions.dart';
-import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/cart_item_data.dart';
-import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/cart_item_photo.dart';
-import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/cart_remove_count_item.dart';
+import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Cart%20Item/cart_item_data.dart';
+import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Cart%20Item/cart_item_photo.dart';
+import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Cart%20Item/cart_remove_count_item.dart';
 
 class CartViewItem extends StatelessWidget {
   const CartViewItem({
