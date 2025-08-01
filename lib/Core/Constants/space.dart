@@ -13,7 +13,7 @@ class Space {
   final SizedBox vertical24 = SizedBox(height: 24.sp);
   final SizedBox vertical36 = SizedBox(height: 36.sp);
   final SizedBox vertical50 = SizedBox(height: 50.sp);
-  final SizedBox horizintal8 = SizedBox(width: 8.sp);
-  final SizedBox horizintal16 = SizedBox(width: 16.sp);
-  final SizedBox horizintal24 = SizedBox(width: 24.sp);
+  final SizedBox horizontal8 = SizedBox(width: 8.sp);
+  final SizedBox horizontal16 = SizedBox(width: 16.sp);
+  final SizedBox horizontal24 = SizedBox(width: 24.sp);
 }

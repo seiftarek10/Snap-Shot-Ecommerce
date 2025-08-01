@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Coupon%20Widgets/coupon_button.dart';
+import 'package:snap_shot/Core/Constants/space.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/button.dart';
 import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Coupon%20Widgets/coupon_text_field.dart';
 
 class CuponWidget extends StatelessWidget {
@@ -12,11 +13,19 @@ class CuponWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 43.h,
-      child: const Row(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(flex: 5, child: CuoponTextField()),
-          Expanded(flex: 2, child: CouponButton()),
+          const Expanded(flex: 5, child: CuoponTextField()),
+          Space.instance.horizontal8,
+          Expanded(
+              flex: 2,
+              child: AppButton(
+                label: 'Apply',
+                fontSize: 15.sp,
+                onPressed: () {},
+                radius: 15.r,
+              )),
         ],
       ),
     );

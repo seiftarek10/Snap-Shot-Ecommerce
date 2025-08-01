@@ -3,7 +3,8 @@ import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
 import 'package:snap_shot/Core/Shared%20Widgets/arrow_back_with_title.dart';
 
-import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Coupon%20Widgets/coupon_widget.dart';
+import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Checkout/checkout_widget.dart';
+
 import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/cart_item_list_view.dart';
 import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/clear_button.dart';
 
@@ -24,16 +25,9 @@ class CartView extends StatelessWidget {
           const Align(alignment: Alignment.centerRight, child: ClearButton()),
         ])),
         const CartItemListView(),
-        SliverToBoxAdapter(
-            child: Column(
-          children: [
-            Space.instance.vertical24,
-            const CuponWidget(),
-          ],
-        )),
+        const SliverToBoxAdapter(
+            child: CheckoutWidget()),
       ],
     ))));
   }
 }
-
-

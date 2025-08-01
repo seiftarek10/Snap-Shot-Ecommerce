@@ -16,7 +16,7 @@ class CartViewItem extends StatelessWidget {
         height: context.height * 0.12,
         child: Row(children: [
           const Expanded(flex: 5, child: CartItemPhoto()),
-          Space.instance.horizintal16,
+          Space.instance.horizontal16,
           const Expanded(flex: 6, child: CartItemData()),
           const Expanded(flex: 4, child: CartRemoveOrCountItem())
         ]));
