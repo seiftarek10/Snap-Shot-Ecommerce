@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
 import 'package:snap_shot/Core/Shared%20Widgets/arrow_back_with_title.dart';
+
+import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/cart_view_item.dart';
 import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/clear_button.dart';
 
 class CartView extends StatelessWidget {
@@ -17,9 +19,12 @@ class CartView extends StatelessWidget {
             const PageTitleWithArrowBackWidget(title: 'Cart'),
             Space.instance.vertical18,
             const Align(alignment: Alignment.centerRight, child: ClearButton()),
+            Space.instance.vertical36,
+            const CartViewItem()
           ],
         ),
       )),
     );
   }
 }
+

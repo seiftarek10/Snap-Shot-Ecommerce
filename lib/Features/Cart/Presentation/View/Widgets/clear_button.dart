@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:snap_shot/Core/Style/colors.dart';
 import 'package:snap_shot/Core/Style/fonts.dart';
 
 class ClearButton extends StatelessWidget {
@@ -23,8 +22,8 @@ class ClearButton extends StatelessWidget {
         ),
         child: Text(
           'Clear',
-          style: Fonts.instance.font14_500Black
-              .copyWith(color: AppColors.instance.grey, fontSize: 12.sp),
+          style: Fonts.instance.font12_500Grey
+            
         ));
   }
 }
