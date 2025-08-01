@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
@@ -13,21 +12,18 @@ class CheckoutWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-    Space.instance.vertical24,
-    const CuponWidget(),
-    Space.instance.vertical24,
-    const CheckoutData(),
-    Space.instance.vertical18,
-    const CheckoutData(),
-    Space.instance.vertical18,
-    const CheckoutData(),
-    Space.instance.vertical18,
-    AppButton(onPressed: () {}, label: 'Checkout', radius: 17.r),
-    Space.instance.vertical12,
-              ],
-            );
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      Space.instance.vertical24,
+      const CuponWidget(),
+      Space.instance.vertical24,
+      const CheckoutData(),
+      Space.instance.vertical18,
+      const CheckoutData(),
+      Space.instance.vertical18,
+      const CheckoutData(),
+      Space.instance.vertical18,
+      AppButton(onPressed: () {}, label: 'Checkout', radius: 17.r),
+      Space.instance.vertical12
+    ]);
   }
 }

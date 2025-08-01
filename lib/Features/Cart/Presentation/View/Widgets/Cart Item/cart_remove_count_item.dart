@@ -47,13 +47,16 @@ class CartRemoveOrCountItem extends StatelessWidget {
     );
   }
 
-  InkWell removeButton() {
-    return InkWell(
-      borderRadius: BorderRadius.circular(30),
-      onTap: () {},
-      child: Padding(
-        padding: EdgeInsets.all(4.sp),
-        child: Text('REMOVE', style: Fonts.instance.font12_500Grey),
+  Align removeButton() {
+    return Align(
+      alignment: Alignment.topCenter,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(30),
+        onTap: () {},
+        child: Padding(
+          padding: EdgeInsets.all(4.sp),
+          child: Text('REMOVE', style: Fonts.instance.font12_500Grey),
+        ),
       ),
     );
   }
