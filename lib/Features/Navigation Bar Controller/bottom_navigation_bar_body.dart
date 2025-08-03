@@ -6,6 +6,7 @@ import 'package:snap_shot/Features/Cart/Presentation/View/Screen/cart_view.dart'
 import 'package:snap_shot/Features/Category/Presentation/View/Screens/category_view.dart';
 import 'package:snap_shot/Features/Home%20Page/Presentation/View/Screens/home_page_view.dart';
 import 'package:snap_shot/Features/Navigation%20Bar%20Controller/Widgets/bottom_bar_item.dart';
+import 'package:snap_shot/Features/Profile/Presentation/View/Screens/profile_view.dart';
 
 class BottomNavigationBarBody extends StatefulWidget {
   const BottomNavigationBarBody({super.key});
@@ -31,7 +32,7 @@ class _BottomNavigationBarBodyState extends State<BottomNavigationBarBody> {
     const CategoryView(),
     const Text('Heart'),
     const CartView(),
-    const Text('Profile'),
+    const ProfileView(),
   ];
 
   void _onItemTapped(int index) {
