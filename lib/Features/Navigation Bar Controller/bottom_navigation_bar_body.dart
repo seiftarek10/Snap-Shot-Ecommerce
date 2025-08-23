@@ -6,6 +6,7 @@ import 'package:snap_shot/Features/Cart/Presentation/View/Screen/cart_view.dart'
 import 'package:snap_shot/Features/Category/Presentation/View/Screens/category_view.dart';
 import 'package:snap_shot/Features/Home%20Page/Presentation/View/Screens/home_page_view.dart';
 import 'package:snap_shot/Features/Navigation%20Bar%20Controller/Widgets/bottom_bar_item.dart';
+import 'package:snap_shot/Features/Orders/Presentation/View/Screens/orders_view.dart';
 import 'package:snap_shot/Features/Profile/Presentation/View/Screens/profile_view.dart';
 
 class BottomNavigationBarBody extends StatefulWidget {
@@ -21,16 +22,16 @@ class _BottomNavigationBarBodyState extends State<BottomNavigationBarBody> {
 
   final List<String> _icons = [
     Assets.svgHome,
-    Assets.svgCategory,
     Assets.svgHeart,
+    Assets.svgCategory,
     Assets.svgBag,
     Assets.svgProfile,
   ];
 
   final List<Widget> _screens = [
     const HomePageView(),
+    const OrdersView(),
     const CategoryView(),
-    const Text('Heart'),
     const CartView(),
     const ProfileView(),
   ];

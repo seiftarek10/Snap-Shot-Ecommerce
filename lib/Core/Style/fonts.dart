@@ -23,6 +23,10 @@ class Fonts {
         color: Colors.white,
         fontSize: 20.sp,
       );
+        TextStyle get font20_700Black => TextStyle(
+        color: Colors.black,
+        fontSize: 20.sp,
+      );
   TextStyle get font32BoldWhite => TextStyle(
       color: Colors.white, fontSize: 32.sp, fontWeight: FontWeight.bold);
   TextStyle get font14_500White => TextStyle(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
-import 'package:snap_shot/Core/Shared%20Widgets/arrow_back_with_title.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/page_text_title.dart';
 
 import 'package:snap_shot/Features/Cart/Presentation/View/Widgets/Checkout/checkout_widget.dart';
 
@@ -20,7 +20,7 @@ class CartView extends StatelessWidget {
       slivers: [
         SliverToBoxAdapter(
             child: Column(children: [
-          const PageTitleWithArrowBackWidget(title: 'Cart'),
+          const PageTextTitle(title: 'Cart'),
           Space.instance.vertical18,
           const Align(alignment: Alignment.centerRight, child: ClearButton()),
         ])),

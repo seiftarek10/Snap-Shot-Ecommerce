@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/page_text_title.dart';
 import 'package:snap_shot/Core/Style/fonts.dart';
 import 'package:snap_shot/Features/Profile/Presentation/View/Widgets/Profile%20Widgets/profile_data_item.dart';
-import 'package:snap_shot/Features/Profile/Presentation/View/Widgets/Profile%20Widgets/profile_title.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -15,7 +15,9 @@ class ProfileView extends StatelessWidget {
             child: AppPagePadding(
                 child: Column(
       children: [
-        const ProfileTitle(),
+        const PageTextTitle(
+          title: 'Profile',
+        ),
         Space.instance.vertical36,
         const ProfileDataItem(),
         Space.instance.vertical18,

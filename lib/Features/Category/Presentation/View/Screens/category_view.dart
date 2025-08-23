@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:snap_shot/Core/Constants/space.dart';
 import 'package:snap_shot/Core/Page%20Layout/page_padding.dart';
 import 'package:snap_shot/Features/Category/Presentation/View/Widgets/categories_list.dart';
-import 'package:snap_shot/Features/Category/Presentation/View/Widgets/category_page_title.dart';
+import 'package:snap_shot/Core/Shared%20Widgets/page_text_title.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({super.key});
@@ -21,7 +21,7 @@ class CategoryView extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                           Space.instance.topPage,
-                          const CategoryPageTitle()
+                          const PageTextTitle(title: 'Categories',)
                         ])),
                     const CategoriesList()
                   ]))),
