@@ -24,7 +24,7 @@ class ProfileView extends StatelessWidget {
         const ProfileDataItem(),
         Space.instance.vertical18,
         const ProfileDataItem(),
-        Spacer(),
+        const Spacer(),
         TextButton(
             onPressed: () {},
             child: Text(
